@@ -20,9 +20,12 @@ Architecture
 
 ### The system architecture is illustrated in the diagram above. Key components include:
 
-Data Providers: Financial data is streamed from providers (e.g., NASDAQ, CME, NSE) via Databento.
+*Data Providers:* Financial data is streamed from providers (e.g., NASDAQ, CME, NSE) via Databento.
+
 Data Ingestion and Streaming: The data is processed and streamed using Redpanda.
+
 Real-Time Anomaly Detection: Anomaly detection is implemented with Quix Streams. Two primary detection rules are used:
+
 High Volume Rule: Flags transactions with unusually high trading volumes.
 Isolation Forest Model: Detects anomalies based on trade price patterns.
 Output Streaming: The results are visualized and stored via Streamlit and Elasticsearch.
