@@ -33,3 +33,4 @@ anomalydetector/.env
 input=stock_data_input_topic
 output=anomalies_output_topic
 
+### Step 2: Configure Environment Variables
