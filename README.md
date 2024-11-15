@@ -25,3 +25,11 @@ This project implements a real-time anomaly detection pipeline for stock market 
 ```bash
 git clone <repo-url>
 cd <repo-folder>
+
+Step 2: Configure Environment Variables
+Each component (anomalydetector and producer) requires environment variables stored in .env files. You can copy and modify the following sample configurations:
+
+anomalydetector/.env
+input=stock_data_input_topic
+output=anomalies_output_topic
+
