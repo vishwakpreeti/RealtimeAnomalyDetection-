@@ -28,7 +28,7 @@ input=stock_data_input_topic
 output=anomalies_output_topic
 output=stock_data_input_topic
 
-# For Anomaly Detector
+**### For Anomaly Detector**
 cd anomalydetector
 pip install -r requirements.txt
 
