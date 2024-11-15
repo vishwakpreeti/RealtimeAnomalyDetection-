@@ -20,25 +20,48 @@ Architecture
 
 ### The system architecture is illustrated in the diagram above. Key components include:
 
-*Data Providers:* Financial data is streamed from providers (e.g., NASDAQ, CME, NSE) via Databento.
+### Data Providers: 
+Financial data is streamed from providers (e.g., NASDAQ, CME, NSE) via Databento.
 
-Data Ingestion and Streaming: The data is processed and streamed using Redpanda.
+### Data Ingestion and Streaming: 
+The data is processed and streamed using Redpanda.
 
-Real-Time Anomaly Detection: Anomaly detection is implemented with Quix Streams. Two primary detection rules are used:
+### Real-Time Anomaly Detection: 
+Anomaly detection is implemented with Quix Streams. Two primary detection rules are used:
 
-High Volume Rule: Flags transactions with unusually high trading volumes.
-Isolation Forest Model: Detects anomalies based on trade price patterns.
-Output Streaming: The results are visualized and stored via Streamlit and Elasticsearch.
-Key Features
-Dockerized Environment: Fully containerized for easy deployment and scalability.
-High-Performance Streaming: Uses Quix Streams and Redpanda for efficient data streaming.
-Multiple Anomaly Detection Methods: High-volume thresholds and machine learning-based Isolation Forest.
-Real-Time Visualization: Visualize results using Streamlit and store data in Elasticsearch.
+### High Volume Rule: 
+Flags transactions with unusually high trading volumes.
+
+### Isolation Forest Model: 
+Detects anomalies based on trade price patterns.
+
+### Output Streaming: 
+The results are visualized and stored via Streamlit and Elasticsearch.
+
+## Key Features:
+
+### Dockerized Environment: 
+Fully containerized for easy deployment and scalability.
+
+### High-Performance Streaming: 
+Uses Quix Streams and Redpanda for efficient data streaming.
+
+### Multiple Anomaly Detection Methods: 
+High-volume thresholds and machine learning-based Isolation Forest.
+
+### Real-Time Visualization: 
+Visualize results using Streamlit and store data in Elasticsearch.
+
 Installation
+
 Prerequisites
+
 Docker and Docker Compose
+
 Python 3.12.5
+
 Setup
+
 Clone the repository:
 
 bash
