@@ -52,34 +52,29 @@ High-volume thresholds and machine learning-based Isolation Forest.
 ### Real-Time Visualization: 
 Visualize results using Streamlit and store data in Elasticsearch.
 
-Installation
+## Installation
 
-Prerequisites
+### Prerequisites
 
 Docker and Docker Compose
-
 Python 3.12.5
 
-Setup
+## Setup
 
-Clone the repository:
-
-bash
-Copy code
+1. Clone the repository: 
 git clone https://github.com/vishwakpreeti/RealtimeAnomalyDetection-.git
 cd RealtimeAnomalyDetection-
-Create a .env file with the required environment variables:
 
-plaintext
-Copy code
+2. Create a .env file with the required environment variables:
+
 input=<input_topic_name>
 output=<output_topic_name>
-Build and start the Docker containers:
 
-bash
-Copy code
+3. Build and start the Docker containers:
+
 docker-compose up --build
-Usage
+
+# Usage
 Data Ingestion: The producer script reads financial data from .zst files in the nasdaq folder and publishes it to Kafka.
 Anomaly Detection: The consumer script applies the high-volume and Isolation Forest rules to detect anomalies in real-time.
 Visualization: Detected anomalies are visualized in Streamlit and stored in Elasticsearch for analysis.
