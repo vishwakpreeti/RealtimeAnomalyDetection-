@@ -1,16 +1,24 @@
 # Real-Time Anomaly Detection in Financial Data Streams
-<!-- Replace with actual path or link to the architecture image -->
+
+![image](https://github.com/user-attachments/assets/11dd9dc4-a684-4919-98d1-9faeb3a1af17)
 
 This project implements real-time anomaly detection on streaming financial data, sourced from major providers like NASDAQ, CME Group, and NSE. The system uses Quix Streams for Kafka-based data streaming, Redpanda for message distribution, and Docker for containerized deployment. Anomalies are detected through a combination of high-volume trading thresholds and Isolation Forest machine learning models.
 
-Table of Contents
+## Table of Contents
+
 Architecture
+
 Key Features
+
 Installation
+
 Usage
+
 License
+
 Architecture
-The system architecture is illustrated in the diagram above. Key components include:
+
+### The system architecture is illustrated in the diagram above. Key components include:
 
 Data Providers: Financial data is streamed from providers (e.g., NASDAQ, CME, NSE) via Databento.
 Data Ingestion and Streaming: The data is processed and streamed using Redpanda.
