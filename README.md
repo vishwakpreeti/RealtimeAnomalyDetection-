@@ -83,11 +83,17 @@ docker-compose up --build
 ## List of dependencies:
 
 quixstreams==2.9.0
+
 python-dotenv
+
 scikit-learn
+
 zstandard
+
 tqdm
+
 pandas
+
 License
 
 This project is licensed under the IITJ License.
