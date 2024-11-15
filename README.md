@@ -75,22 +75,12 @@ output=<output_topic_name>
 docker-compose up --build
 
 # Usage
-Data Ingestion: The producer script reads financial data from .zst files in the nasdaq folder and publishes it to Kafka.
-Anomaly Detection: The consumer script applies the high-volume and Isolation Forest rules to detect anomalies in real-time.
-Visualization: Detected anomalies are visualized in Streamlit and stored in Elasticsearch for analysis.
-Sample Command
-To run the producer, execute:
+1. Data Ingestion: The producer script reads financial data from .zst files in the nasdaq folder and publishes it to Kafka.
+2. Anomaly Detection: The consumer script applies the high-volume and Isolation Forest rules to detect anomalies in real-time.
+3. Visualization: Detected anomalies are visualized in Streamlit and stored in Elasticsearch for analysis.
 
-bash
-Copy code
-python producer_main.py
-And for the consumer:
-
-bash
-Copy code
-python main.py
-Requirements
-List of dependencies:
+# Requirements
+## List of dependencies:
 
 quixstreams==2.9.0
 python-dotenv
@@ -99,4 +89,5 @@ zstandard
 tqdm
 pandas
 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
+This project is licensed under the IITJ License.
